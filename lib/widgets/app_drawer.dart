@@ -78,7 +78,7 @@ class AppDrawer extends StatelessWidget {
           )),
           MenuTile(
             name: "Dashboard",
-            icon: Icon(
+            icon: const Icon(
               Icons.dashboard,
               color: AppTheme.darkCharcoal,
             ),
@@ -88,12 +88,12 @@ class AppDrawer extends StatelessWidget {
           ),
           MenuTile(
             name: "Tests",
-            icon: Icon(
+            icon: const Icon(
               Icons.paste_rounded,
               color: AppTheme.darkCharcoal,
             ),
             onTap: () {
-              Get.offNamed(AppRoutes.getTestListRoute());
+              Get.toNamed(AppRoutes.getTestListRoute());
             },
           ),
           const MenuTile(

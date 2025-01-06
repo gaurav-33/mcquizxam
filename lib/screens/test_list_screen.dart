@@ -58,6 +58,7 @@ class TestListScreen extends StatelessWidget {
                   ),
                   RecButton(
                       name: "Create Test",
+                      fontSize: width * 0.045,
                       onTap: () async {
                         Get.offNamed(
                           AppRoutes.getCreateTestPageRoute(),

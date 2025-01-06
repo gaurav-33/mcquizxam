@@ -231,6 +231,7 @@ class CreateTestScreen extends StatelessWidget {
                       alignment: Alignment.center,
                       child: Obx(() => RecButton(
                           name: "Create Now",
+                          fontSize: width * 0.045,
                           onTap: () async {
                             await createTestController.submit();
                           },

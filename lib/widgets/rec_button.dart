@@ -48,33 +48,9 @@ class RecButton extends StatelessWidget {
             : Text(
                 name,
                 style: TextStyle(
-                    fontSize: fontSize ?? 26, color: AppTheme.lightAqua),
+                    fontSize: fontSize ?? 20, color: AppTheme.lightAqua),
               ),
       ),
     );
   }
 }
-
-// Widget build(BuildContext context) {
-//   return InkWell(
-//     onTap: onTap,
-//     child: Container(
-//         width: width ?? Get.width * 0.5,
-//         height: height ?? Get.width * 0.12,
-//         decoration: const BoxDecoration(
-//             color: AppTheme.desaturatedBlue,
-//             borderRadius: BorderRadius.only(
-//                 topLeft: Radius.circular(24),
-//                 bottomRight: Radius.circular(24))),
-//         child: Center(
-//           child: isLoading
-//               ? const CircularProgressIndicator(
-//             color: AppTheme.lightAqua,
-//           )
-//               : Text(
-//             name,
-//             style: const TextStyle(fontSize: 26, color: AppTheme.lightAqua),
-//           ),
-//         )),
-//   );
-// }
