@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controller/home_controller.dart';
-import '../routes/app_routes.dart';
 
 import '../res/theme.dart';
 import '../widgets/app_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
-
   final HomeController _homeController = Get.find<HomeController>();
-
   final width = Get.width;
   final height = Get.height;
 
@@ -52,9 +49,6 @@ class HomeScreen extends StatelessWidget {
                       fontSize: width * 0.05, color: AppTheme.neptune100),
                 ),
                 const SizedBox(height: 20),
-                IconButton(
-                    onPressed: () => Get.toNamed(AppRoutes.getTestListRoute()),
-                    icon: Icon(Icons.accessible_forward))
               ],
             ),
           ),

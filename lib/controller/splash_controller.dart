@@ -11,10 +11,10 @@ class SplashController extends GetxController {
   }
 
   void _navigateToNextScreen() async {
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(milliseconds: 1500));
     if (isLogin()) {
       Get.offNamed(
-          AppRoutes.getHomeRoute()); // Replace with your home screen route
+          AppRoutes.getHomeRoute());
     } else {
       Get.offNamed(AppRoutes.getLoginRoute());
     }

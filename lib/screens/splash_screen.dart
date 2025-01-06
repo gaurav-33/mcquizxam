@@ -1,6 +1,6 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../controller/splash_controller.dart';
 import '../res/theme.dart';
 
@@ -8,28 +8,33 @@ class SplashScreen extends StatelessWidget {
   final SplashController splashController = Get.put(SplashController());
 
   SplashScreen({super.key});
-
+  final String imagePath = "assets/logo_mcquiz.png";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppTheme.desaturatedBlue,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.ac_unit_rounded,
-              size: 100,
-              color: Theme.of(context).primaryColor,
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'M C Q U I Z',
-              style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
-                color: AppTheme.darkIndigo,
-              ),
-            ),
+            Stack(
+              children: [
+                Image(
+                  image: AssetImage(imagePath),
+                  height: 500,
+                ),
+                ClipRect(
+                    child: BackdropFilter(
+                        filter: ImageFilter.blur(
+                          sigmaX: 15,
+                          sigmaY: 20,
+                        ),
+                        child: Image(
+                          image: AssetImage(imagePath),
+                          height: 500,
+                        ))),
+              ],
+            )
           ],
         ),
       ),

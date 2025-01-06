@@ -67,13 +67,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/learning/roadmap_icon.png
-    - assets/learning/pdf_icon.png
-    - assets/learning/profile_img.png
-    - assets/learning/playlist_icon.png
-    - assets/learning/projects_icon.png
-    - assets/learning/leading_icon.png
-    - assets/learning/lesson_icon.png
+    - assets/logo_mcquiz.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
